@@ -124,6 +124,7 @@ end
 
 def shoe_size(player)
   find_the_player(player_name)[:shoe]
+end
 
 def teams
   game_hash.values
