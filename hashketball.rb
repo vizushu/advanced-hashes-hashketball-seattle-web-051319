@@ -175,22 +175,3 @@ def big_shoe_rebounds
   player_biggest_shoe_size.fetch(:rebounds)
 end
 
-def teams
-  game_hash.values
-end
-
-def players
-  game_hash[:home][:players].merge(game_hash[:away][:players])
-end
-
-def find_the_team(team_name)
-  teams.find {|team| team.fetch(:team_name) == team_name}
-end
-
-def find_the_player(name)
-  players.fetch(name)
-end
-
-def player_biggest_shoe_size
-  players.max_by{|player, stats| stats.fetch(:shoe)}[1]
-end
