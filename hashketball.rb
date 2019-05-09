@@ -122,6 +122,9 @@ def num_points_scored(name)
   player.fetch(:points)
 end
 
+def shoe_size(player)
+  
+
 def teams
   game_hash.values
 end
