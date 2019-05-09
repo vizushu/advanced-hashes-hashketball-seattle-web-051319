@@ -123,7 +123,7 @@ def num_points_scored(name)
 end
 
 def shoe_size(player)
-  
+  find_the_player
 
 def teams
   game_hash.values
