@@ -153,8 +153,6 @@ end
 
 
 
-require 'pry'
-
 
 def team_colors(team_name)
   team = find_the_team(team_name)
