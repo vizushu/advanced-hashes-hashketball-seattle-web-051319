@@ -131,6 +131,10 @@ def teams
   game_hash.values
 end
 
+def team_colors(team_name)
+  find_team(team_name)[:colors]
+end
+
 def players
   game_hash[:home][:players].merge(game_hash[:away][:players])
 end
